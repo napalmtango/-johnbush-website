@@ -297,6 +297,10 @@ a.sample-item:hover {
   font-size: 0.85rem;
 }
 
+
+
+
+
 .footer-left {
   background-color: rgba(224, 225, 224, 0.6);
   width: 100%;
@@ -359,9 +363,41 @@ input {
   margin: 4px 12px 9px 12px;
   text-align: right;
   padding: 4px;
-  border: 1px solid;
+  border: 1px solid #333;
   border-radius: 8px;
   font-family: "Barlow condensed", sans-serif;
+}
+
+input:focus:invalid {
+  border: 1px solid red;
+}
+
+#comments {
+  border-radius: 8px;
+  border: 1px solid #333;
+  font-family: "Barlow condensed", sans-serif;
+  text-align: right;
+  padding-right: 12px;
+  margin: 4px 12px 9px 12px;
+  width: 300px;
+}
+
+.checkbox-grid {
+  float: right;
+  /* padding-right: 18px; */
+  margin-right: 6px;
+  width: 400px;
+  grid-template-columns: auto auto auto ;
+  display: grid;
+  /* padding-right: 12px; */
+}
+
+.margin-right {
+  margin-right: 4px;
+}
+
+.checkbox {
+  margin-left: 4px;
 }
 
 .back-to-top {
@@ -374,11 +410,11 @@ input {
 }
 
 .field-width-250 {
-  width: 250px;
+  width: 300px;
 }
 
 .submit {
-  width: 4em;
+  width: 6em;
   text-align: center;
   background-color: #393e46;
   color: #FFF;
