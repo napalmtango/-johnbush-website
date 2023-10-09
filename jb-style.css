@@ -297,9 +297,9 @@ a.sample-item:hover {
   font-size: 0.85rem;
 }
 
-
-
-
+#email {
+  font-size: 0.85rem;
+}
 
 .footer-left {
   background-color: rgba(224, 225, 224, 0.6);
@@ -368,9 +368,7 @@ input {
   font-family: "Barlow condensed", sans-serif;
 }
 
-input:focus:invalid {
-  border: 1px solid red;
-}
+
 
 #comments {
   border-radius: 8px;
