@@ -7,6 +7,7 @@
     <!--External Stylesheet(s), Links including Favicon, Styles-->
     <link rel="icon" type="image/x-icon" href="images/jb-favicon.ico" />
     <link rel="stylesheet" href="jb-style.css" />
+    <link rel="stylesheet" href="form.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -56,7 +57,7 @@
               src="images/johnbush-page-menubar_1280-3.png"
               alt="Graphic effect for the menubar"
             />
-            <!--https://drive.google.com/uc?export=download&id=1N0bdxIIDpLZesQg1n21lswPwT-g8b9K3-->
+           
           </div>
           <div id="navbar-links">
             <nav>
@@ -76,22 +77,7 @@
               >
             </nav>
           </div>
-          <!-- <div id="navbar-links">
-            <nav>
-              <a href="#intro">Introduction</a
-              >&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-              <a href="#about-me">About Me</a
-              >&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-              <a href="#blog-post">Blog Post</a
-              >&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-              <a href="#about-site">About This Site</a
-              >&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-              <a
-                href="https://www.linkedin.com/in/john-bush-ca/"
-                target="_blank">My LinkedIn Profile</a
-              >
-            </nav>
-          </div> -->
+          
         </div>
       </header>
 
@@ -179,34 +165,6 @@
             <span class="text-accent-1hot">#</span>
             sample pages
           </h2>
-
-          <!-- <div class="sample-flex-container">
-            <div class="sample-item">
-              <a class="foot" href="https://www.johnbush.website/rush_2112minus89/" target="_blank">
-                <div class="sample-image"><img src="images/rush-page.jpg" alt="Link to a Rush fan site"/>
-                </div>
-                Rush fan site</a>
-            </div>
-
-            <div class="sample-item">
-              <a class="foot" href="https://www.johnbush.website/johan-wigstomper" target="_blank">
-                <div class="sample-image"><img src="images/johan-w-thumb_145x175.jpg"   alt="Link to a goofy about me page"/>Silly about me page</a>
-                </div>
-            </div>
-
-            <div class="sample-item">
-              <a class="foot" href="https://www.johnbush.website/simple-table" target="_blank">
-                <div class="sample-image"><img src="images/table-thumb_145x175.jpg"   alt="Link to a simple table"/>Simple table</a>
-                </div>
-            </div>
-
-            <div class="sample-item">
-              <a class="foot" href="https://www.johnbush.website/artist-grid" target="_blank">
-                <div class="sample-image"><img src="images/artists-thumb_145x175.jpg" alt="A gallery of the top 16 artists of all time and thier greatest masterpieces"/>
-                Artist gallery</a>
-                </div>
-            </div>  
-          </div> -->
 
           <div id="slider">
             <div>
@@ -324,14 +282,34 @@
         <div id="footer-grid">
           <div class="footer-left text-align-right">
             <h3 style="padding-right: 12px">Sign up for my mailing list</h3>
-            <form action="#action" method="post">
-              <input class="field-width-250" type="text" placeholder = "Name" /><br />
-              <input class="field-width-250" 
-                type="email"
-                name="email"
-                placeholder = "emailaddress@email.com"
-                id="email"/><br />
-              <input class="submit" id="input-button" type="submit" />
+            <form id="exampleForm" novalidate>
+
+              <div class="input-group">
+                <label for="firstName" >Name </label>
+                <input type="text" id="firstName" name="firstName" class="input_field" required>
+                <!-- invalid-feedback = additional class for <small> -->
+                <small class="error-msg ">Required</small>
+              </div>
+              
+              <div class="input-group">
+                <label for="email" >Email </label>
+                <input type="email" id="email" name="email" class="input_field" required>
+                <!-- invalid-feedback = additional class for <small> -->
+                <small class="error-msg ">Required</small>
+              </div>
+              
+              <!-- <div class="input-group checkbox form-check">
+                <input type="checkbox" name="subscribe" id="subscribeYes" class="form-check-input" required>
+                <label for="subscribeYes" class="form-check-label">Subscribe to our newsletter?</label> -->
+                <!-- invalid-feedback = additional class for <small> -->
+                <!-- <small class="error-msg ">Required</small>
+              </div> -->
+        
+              <div class="form-btns">
+                <button type="submit" class="btn btn-primary submit" disabled>SUBMIT</button>
+                <div id="form-submitted-msg">Form successfully submitted!</div>
+              </div>
+        
             </form>
             
           </div>
@@ -352,6 +330,7 @@
     </div>
 
 
+    <script src="form.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
