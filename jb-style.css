@@ -291,7 +291,7 @@ a.sample-item:hover {
 #footer-grid {
   display: grid;
   grid-template-columns: 38% 62%;
-  height: 100%;
+  height: 400px;
   width: 1272px;
   margin-top: 20px;
   font-size: 0.85rem;
@@ -411,13 +411,6 @@ input {
   width: 300px;
 }
 
-.submit {
-  width: 6em;
-  text-align: center;
-  background-color: #393e46;
-  color: #FFF;
-}
-
 /* Add Slider Styles */
 #slider {
   position: relative;
@@ -469,9 +462,12 @@ input {
   z-index: 1;
 }
 
-button {
+.slider-btn {
   position: absolute;
-  bottom: -22px;
+  bottom: -22px;}
+
+button {
+  
   /* transform: translateY(-50%); */
   border: 1px solid #fff;
   border-radius: 8px;
@@ -486,9 +482,9 @@ button {
   padding: 0px .75rem ;
 }
 
-button:hover {
+/* button:hover {
   background-color: #9e1f63;
-}
+} */
 
 button#prev {
   left: 140px;
