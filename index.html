@@ -214,8 +214,8 @@
               >
             </div>
             
-            <button id="prev">&lt;</button>
-            <button id="next">&gt;</button>
+            <button class = "slider-btn" id="prev">&lt;</button>
+            <button class = "slider-btn" id="next">&gt;</button>
           </div>
       
           
@@ -282,36 +282,31 @@
         <div id="footer-grid">
           <div class="footer-left text-align-right">
             <h3 style="padding-right: 12px">Sign up for my mailing list</h3>
+            
             <form id="exampleForm" novalidate>
 
               <div class="input-group">
-                <label for="firstName" >Name </label>
+                <label for="firstName" >Name</label>
                 <input type="text" id="firstName" name="firstName" class="input_field" required>
                 <!-- invalid-feedback = additional class for <small> -->
                 <small class="error-msg ">Required</small>
               </div>
               
               <div class="input-group">
-                <label for="email" >Email </label>
+                <label for="email" >Email</label>
                 <input type="email" id="email" name="email" class="input_field" required>
                 <!-- invalid-feedback = additional class for <small> -->
-                <small class="error-msg ">Required</small>
+                <small class="error-msg "></small>
               </div>
               
-              <!-- <div class="input-group checkbox form-check">
-                <input type="checkbox" name="subscribe" id="subscribeYes" class="form-check-input" required>
-                <label for="subscribeYes" class="form-check-label">Subscribe to our newsletter?</label> -->
-                <!-- invalid-feedback = additional class for <small> -->
-                <!-- <small class="error-msg ">Required</small>
-              </div> -->
+
         
               <div class="form-btns">
-                <button type="submit" class="btn btn-primary submit" disabled>SUBMIT</button>
+                <button type="submit" class="submit" disabled>Submit</button>
                 <div id="form-submitted-msg">Form successfully submitted!</div>
               </div>
         
             </form>
-            
           </div>
 
           <div class="footer-right">

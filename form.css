@@ -11,16 +11,17 @@
 }
 
 #exampleForm {
-  width: 40%;
+  width: 60%;
+  float: right;
+  margin-right: 24px;
 }
 
 .input_field {
-  height: 2.4em;
   border: 1px solid #333;
 }
 
 .input-group {
-  margin-bottom: 1.5rem;
+  margin-top: .75rem;
 }
 
 .input-group:not(.radio):not(.checkbox) {
@@ -52,12 +53,19 @@ legend {
   width: max-content;
 }
 
+.submit {
+  /* width: 3em; */
+  text-align: center;
+  background-color: #393e46;
+  color: #FFF;
+}
+
 .form-btns {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
+  gap: 1rem; */
   width: 100%;
-  gap: 1rem;
-  margin-top: 2.5rem;
+  margin-top: 1rem;
 }
 
 .form-btns > button {
@@ -65,7 +73,8 @@ legend {
 }
 
 .form-btns > .submit {
-  padding-inline: 3rem;
+  padding-inline: 2rem;
+  margin-right: -8px;
 }
 
 .error-msg {
