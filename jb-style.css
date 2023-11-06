@@ -332,6 +332,7 @@ a.slideLink:visited {
   color: #777;
   letter-spacing: normal;
   line-height: 2.6;
+  display: inline-block;
 }
 
 a.slideLink:hover {
