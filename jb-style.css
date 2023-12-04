@@ -7,7 +7,6 @@
   padding: 0;
 }
 
-
 html {
   font-size: 19px;
 }
@@ -16,18 +15,18 @@ body {
   margin: 0px;
   color: #444;
   background-color: #393e46;
-  font-family: "Barlow condensed", sans-serif;
+  font-family: 'Barlow condensed', sans-serif;
 }
 
 .center {
   margin: auto;
   width: 1280px;
   background-color: #fff;
-  background-image: url(images/john-bush-background_2568x2000.jpg); 
+  background-image: url(images/john-bush-background_2568x2000.jpg);
   background-position: 8px 4px;
   background-repeat: no-repeat;
-  border-left: 4px solid #00adb5;
-  border-right: 4px solid #00adb5;
+  border-left: 4px solid #9e1f63;
+  border-right: 4px solid #9e1f63;
   background-size: 100%;
 }
 .centered-text {
@@ -54,6 +53,7 @@ body {
 
 main {
   margin-top: 78px;
+  position: relative;
 }
 
 h1,
@@ -62,7 +62,7 @@ h2 {
   font-weight: normal;
   margin-bottom: 0.2em;
   text-align: right;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 1.2rem;
 }
 
@@ -74,7 +74,7 @@ h3 {
 .heading-tagline {
   font-style: italic;
   font-weight: light;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   text-align: right;
   margin: -6px 0px 0px 0px;
   font-size: 0.83rem;
@@ -118,7 +118,7 @@ h3 {
 
 p {
   margin-top: 3px;
-  font-family: "Barlow condensed", sans-serif;
+  font-family: 'Barlow condensed', sans-serif;
   font-stretch: condensed;
   word-spacing: 0.05em;
   letter-spacing: 0.01em;
@@ -132,7 +132,7 @@ ul {
 }
 
 li {
-  font-family: "Barlow condensed", sans-serif;
+  font-family: 'Barlow condensed', sans-serif;
   font-stretch: condensed;
   word-spacing: 0.05em;
   letter-spacing: 0.01em;
@@ -141,6 +141,7 @@ li {
 
 a {
   letter-spacing: 0.09em;
+  text-decoration: none;
 }
 
 a:link {
@@ -152,7 +153,12 @@ a:visited {
 }
 
 a:hover {
-  color: #fad6e9;
+  text-decoration: underline;
+}
+
+.libug {
+  display: inline-block;
+  margin-left: 0.35em;
 }
 
 .content-grid {
@@ -208,7 +214,7 @@ a:hover {
   position: absolute;
   height: 1.6em;
   top: 22px;
-  font-family: "Shadows Into Light Two", sans-serif;
+  font-family: 'Shadows Into Light Two', sans-serif;
   color: #333;
   overflow: clip;
   animation: tagline-top 2s;
@@ -233,7 +239,7 @@ a:hover {
   position: absolute;
   height: 1.6em;
   top: 54px;
-  font-family: "Shadows Into Light Two", sans-serif;
+  font-family: 'Shadows Into Light Two', sans-serif;
   color: #333;
   overflow: clip;
   animation: tagline-bottom 1.75s;
@@ -258,7 +264,6 @@ a:hover {
   left: 586px;
   width: 689px;
   overflow: hidden;
-
 }
 
 .sample-flex-container {
@@ -269,7 +274,7 @@ a:hover {
 
 .sample-item {
   text-align: center;
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 a.sample-item:link,
@@ -291,7 +296,7 @@ a.sample-item:hover {
 #footer-grid {
   display: grid;
   grid-template-columns: 38% 62%;
-  height: 400px;
+  height: 175px;
   width: 1272px;
   margin-top: 20px;
   font-size: 0.85rem;
@@ -337,6 +342,7 @@ a.slideLink:visited {
 
 a.slideLink:hover {
   color: #9e1f63;
+  text-decoration: none;
 }
 
 #navbar-links {
@@ -366,15 +372,13 @@ input {
   padding: 4px;
   border: 1px solid #333;
   border-radius: 8px;
-  font-family: "Barlow condensed", sans-serif;
+  font-family: 'Barlow condensed', sans-serif;
 }
-
-
 
 #comments {
   border-radius: 8px;
   border: 1px solid #333;
-  font-family: "Barlow condensed", sans-serif;
+  font-family: 'Barlow condensed', sans-serif;
   text-align: right;
   padding-right: 12px;
   margin: 4px 12px 9px 12px;
@@ -386,7 +390,7 @@ input {
   /* padding-right: 18px; */
   margin-right: 6px;
   width: 400px;
-  grid-template-columns: auto auto auto ;
+  grid-template-columns: auto auto auto;
   display: grid;
   /* padding-right: 12px; */
 }
@@ -399,13 +403,47 @@ input {
   margin-left: 4px;
 }
 
+.back-btn {
+  position: fixed;
+  top: 92vh;
+}
+
 .back-to-top {
-  padding: 2px 15px 7px 15px;
-  background-color: #7f8f9f;
+  padding: 4px 15px 7px 15px;
+  background-color: #777;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   margin: 10px;
-  border-radius: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.back-to-top:hover {
+  background-color: #9e1f63;
+  color: white;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.top-arrow {
+  display: inline-block;
+  padding-top: 6px;
+  margin-bottom: -2px;
+}
+
+li-link {
+  display: inline-block;
+  margin-left: 0.25em;
+}
+
+a.li-link {
+  color: #9e1f63;
+  text-decoration: none;
+}
+
+a.li-link:hover {
+  color: #f70787;
+  text-decoration: none;
 }
 
 .field-width-250 {
@@ -417,8 +455,7 @@ input {
   position: relative;
   width: 360px;
   height: 175px;
-  margin: .65rem 0 2.75rem;
-
+  margin: 0.65rem 0 2.75rem;
 }
 
 #slider div {
@@ -434,10 +471,9 @@ input {
   opacity: 0;
   overflow: hidden;
   transition: all 1s ease-in-out;
-  font-size: .85rem;
+  font-size: 0.85rem;
   line-height: 1.35;
   color: #777;
-
 }
 
 .slide-copy {
@@ -446,7 +482,7 @@ input {
   top: 34px;
   margin: 0px 10px 0px 5px;
   line-height: 1.35;
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 .slide-header {
   color: #9e1f63;
@@ -455,7 +491,7 @@ input {
   font-weight: 500;
   left: 150px;
   top: 5px;
-  margin: 0px 10px 0px 5px;;
+  margin: 0px 10px 0px 5px;
 }
 
 #slider div.active {
@@ -465,10 +501,10 @@ input {
 
 .slider-btn {
   position: absolute;
-  bottom: -22px;}
+  bottom: -22px;
+}
 
 button {
-  
   /* transform: translateY(-50%); */
   border: 1px solid #fff;
   border-radius: 8px;
@@ -476,11 +512,11 @@ button {
   height: 30px; */
   background-color: hsl(235, 10%, 75%);
   color: #f1f1f1;
-  font-size: .6rem;
+  font-size: 0.6rem;
   font-stretch: condensed;
   cursor: pointer;
   transition: all 200ms ease-in-out;
-  padding: 0px .75rem ;
+  padding: 0px 0.75rem;
 }
 
 /* button:hover {
@@ -494,4 +530,3 @@ button#prev {
 button#next {
   right: 140px;
 }
-
